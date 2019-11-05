@@ -143,9 +143,16 @@ div.nav-body {
 
 div.spanner {
     padding: 8em;
-    background-image: url("main-banner.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+div.spanner.main {
+    background-image: url("main-banner.png");
+}
+
+div.spanner.build {
+    background-image: url("Krystin-Build.jpg");
 }
