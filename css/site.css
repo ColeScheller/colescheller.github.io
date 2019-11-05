@@ -3,18 +3,18 @@ body {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     overflow-x: hidden;
     min-height: 100%;
-    height: auto;    
+    height: auto;
 }
 
 div.self-nav {
-    z-index: 0;
-    background-color: #f2f2f2;
-    color: #484848;
-    position: relative;
+    z-index:50;
+    background-color: #252525;
+    color: #ffffff;
+    position: fixed;
     display: -webkit-flex;
     -webkit-align-items: center;
     align-items: center;
-    margin: 0em;
+    margin-top: 0.5em;
 }
 
 div.self-nav.title {
@@ -25,25 +25,23 @@ div.self-nav.title {
 
 div.self-nav.link {
     font-size: 1.5em;
-    padding: 0em;
+
 }
 
 li.nav-link {
-    margin: 0em;
     list-style-type: none;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    padding: 0.5em;
 }
 
 li.nav-link:hover {
     transition: background-color 0.5s;
     -webkit-transition: background 0.5s;
-    background-color: #e6e6e6;
+    background-color: #3663b8;
     cursor: pointer;
 }
 
 a.nav-link {
-    color: #484848;
+    color: white;
     text-decoration: none;
 }
 
@@ -73,7 +71,6 @@ div.small-nav.link {
 li.small-nav-link {
     list-style-type: none;
     padding: 0.5em;
-    
 }
 
 li.small-nav-link:hover {
@@ -97,14 +94,58 @@ a.small-nav-link:link {
     text-decoration: none;
 }
 
+
+
+
+
 h1.title {
     color: #141414;
     text-transform: uppercase;
 }
 
-div.parallax-banner {
+div.sidebar-post {
+    width: 100%;
+
+}
+p.sidebar-post-title {
+    font-size: 1.5em;
+    color: #5e5e5e;
+}
+p.sidebar-post-date {
+    float: right;
+    font-size: 1.5em;
+    color: #5e5e5e;
+}
+
+p.error {
+    color: red;
+    font-weight: 2px;
+}
+
+h1.post-title {
+    color: #5e5e5e;
+}
+
+img.profile-pic {
+    border-radius: 50%;
+    padding: 1em;
+    width: 300px;
+    height: 300px;
+}
+
+/* SIDEBAR NAV START */
+
+div.nav-body {
+    background-color: 252525;
+}
+
+/* SIDEBAR NAV END */
+
+div.spanner {
+    padding: 10em;
+    background-image: url("main-banner.png");
     background-attachment: fixed;
-    backgroud-position: center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
